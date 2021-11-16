@@ -13,11 +13,15 @@ public class DynamicTestExample {
 	
 	@TestFactory
 	public Collection<DynamicTest> method1() {
+		
 		return Arrays.asList(
+				
 		DynamicTest.dynamicTest("Positive test", 
 				() -> assertTrue(StringFunction.isPlaindrome("oppo"))),
+		
 		DynamicTest.dynamicTest("Positive test", 
 				() -> assertTrue(StringFunction.isPlaindrome("madam"))),
+		
 		DynamicTest.dynamicTest("Negative test", 
 				() -> assertFalse(StringFunction.isPlaindrome("abcd")))
 		

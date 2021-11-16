@@ -14,6 +14,9 @@ public static boolean isPlaindrome(String str) {
            // If there is a mismatch 
            if (str.charAt(i) != str.charAt(j)) 
                return false; 
+           if(i>j) {
+        	  System.out.println("dead");
+           }
  
            // Increment first pointer and 
            // decrement the other 
